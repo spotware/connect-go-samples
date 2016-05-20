@@ -15,8 +15,7 @@ var conf = &oauth2.Config{
 	ClientID:     "7_5az7pj935owsss8kgokcco84wc8osk0g0gksow0ow4s4ocwwgc",
 	ClientSecret: "49p1ynqfy7c4sw84gwoogwwsk8cocg8ow8gc8o80c0ws448cs4",
 	Scopes:       []string{"trading"},
-	//RedirectURL: "https://sandbox-id.ctrader.com",
-	RedirectURL: "http://localhost:8080/auth",
+	RedirectURL: "https://connect-go-samples.herokuapp.com/auth",
 	Endpoint: oauth2.Endpoint{
 		AuthURL:  "https://sandbox-connect.spotware.com/oauth/v2/auth",
 		TokenURL: "https://sandbox-connect.spotware.com/oauth/v2/token",
