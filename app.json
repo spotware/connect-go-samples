@@ -1,0 +1,15 @@
+{
+  "name": "connect-go-samples",
+  "description": "Samples of using Connect Open API in Go",
+  "keywords": [
+    "getting-started",
+    "go",
+    "sample",
+    "example",
+    "Spotware"
+  ],
+  "image": "heroku/go:1.6",
+  "mount_dir": "src/github.com/spotware/connect-go-samples",
+  "website": "http://github.com/spotware/connect-go-samples",
+  "repository": "http://github.com/spotware/connect-go-samples"
+}
