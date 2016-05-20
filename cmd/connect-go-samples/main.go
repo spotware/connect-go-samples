@@ -56,6 +56,10 @@ func auth(c *gin.Context) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	accoutsApi := NewAccountsAPI(conf.Client(oauth2.NoContext, token));
+	accoutsApi.ListTradingAccounts();
+
 	//client := conf.Client(oauth2.NoContext, token)
 	c.HTML(http.StatusOK, "index.tmpl.html", gin.H{
 		"token" : token.AccessToken,
